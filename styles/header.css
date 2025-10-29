@@ -1,0 +1,274 @@
+ .header{
+  background-color: white;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-bottom-color: rgb(211, 210, 210);
+  border-bottom-width: 0.5px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+ }
+
+ .left-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  margin-left: 10px;
+    
+ }
+
+ .hamburger-menu{
+  width: 24px;
+  height: 22px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+ }
+
+ .youtube-logo{
+  width: 90px;
+  cursor: pointer;
+ }
+
+ .middle-section{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+ }
+
+ .search{
+  flex: 1;
+  padding-left: 15px;
+  height: 36px;
+  /*border-style: solid;
+  border-color: rgb(211, 210, 210);
+  border-width: 0.5px;
+  border-radius: 2px;*/
+  border: 1px solid rgb(211, 210, 210);
+  font-size: 16px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+   width: 0px;
+ }
+
+ .search::placeholder{
+  font-size: 16px;
+ }
+
+ .search-icon{
+  padding-left: 15px;
+  padding-right: 15px;
+ }
+
+ .search-button{
+  display: flex;
+  background-color: rgb(248, 248, 248);
+  border-style: solid;
+  border-color: rgb(211, 210, 210);
+  border-width: 0.5px;
+  height: 40px;
+   display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  margin-left: -1px;
+  cursor: pointer;
+  transition: 0.15s;
+ }
+ .search-button .tooltip{
+  position: absolute;
+  background-color: rgb(135, 135, 135);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  pointer-events: none;
+  transition: 0.15s;
+  opacity: 0;
+ }
+ .search-button:hover .tooltip{
+  opacity: 1;
+ }
+
+ 
+
+ .voice-icon{
+  width: 24px;
+ }
+
+ .voice-button{
+  background-color: white;
+  border-color: white;
+  border-style: solid;
+  border-radius: 1000px;
+  margin-left: 7px;
+  width: 45px;
+  height: 45px;
+  position: relative;
+   display: flex;
+  justify-content: center;
+  cursor: pointer;
+ }
+ .voice-button:hover{
+  background-color: rgb(213, 213, 213);
+ }
+ .voice-button .tooltip{
+  position: absolute;
+  background-color: rgb(135, 135, 135);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  pointer-events: none;
+  transition: 0.15s;
+  opacity: 0;
+  white-space: nowrap;
+ }
+ .voice-button:hover .tooltip{
+  opacity: 1;
+ }
+
+ .right-section{
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+ }
+
+ .upload-button{
+  width: 35px;
+  border-style: none;
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+ }
+ .upload-button .tooltip{
+  position: absolute;
+  background-color: rgb(135, 135, 135);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  pointer-events: none;
+  transition: 0.15s;
+  opacity: 0;
+ }
+ .upload-button:hover .tooltip{
+  opacity: 1;
+ }
+
+.apps-button{
+  width: 35px;
+   border-style: none;
+  cursor: pointer;
+    background-color: white;
+    margin-left: 7px;
+     position: relative;
+  display: flex;
+  justify-content: center;
+}
+.apps-button .tooltip{
+  position: absolute;
+  background-color: rgb(135, 135, 135);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  pointer-events: none;
+  transition: 0.15s;
+  opacity: 0;
+  white-space: nowrap;
+ }
+ .apps-button:hover .tooltip{
+  opacity: 1;
+ }
+
+.note-button{
+  width: 35px;
+   border-style: none;
+  cursor: pointer;
+    background-color: white;
+    margin-left: 7px;
+    margin-right: 7px;
+     position: relative;
+  display: flex;
+  justify-content: center;
+}
+.note-button .tooltip{
+  position: absolute;
+  background-color: rgb(135, 135, 135);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  pointer-events: none;
+  transition: 0.15s;
+  opacity: 0;
+  white-space: nowrap;
+ }
+ .note-button:hover .tooltip{
+  opacity: 1;
+ }
+
+.current-profile-picture{
+  width: 32px;
+   border-style: none;
+   border-radius: 20px;
+  cursor: pointer;
+  margin-left: 7px;
+}
+
+.note-count{
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  border-style: solid;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: red;
+  color: white;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-family: roboto,arial;
+  font-size: 12px;
+  text-align: center;
+}

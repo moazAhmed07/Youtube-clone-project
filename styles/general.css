@@ -1,0 +1,25 @@
+p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      body{
+        /*color: red;*/
+        margin: 0;
+        background-color: rgb(247, 247, 247);
+        height: 1000px;
+        padding-top: 80px;
+        padding-left: 100px;
+        padding-right: 24px;
+        font-family: roboto,arial;
+      }
+
+      .video-title{
+        font-weight: bold;
+      }
+
+      @media (min-width: 1200px){
+        body{
+          margin-left: 168px;
+        }
+      }
